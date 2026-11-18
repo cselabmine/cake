@@ -1,0 +1,200 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pooja Cake Shop | Sweet Moments</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <div class="logo">🎂 Pooja<span> Cakes</span></div>
+    <nav id="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#cakes">Our Cakes</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <button class="cart-btn" onclick="showCart()">
+        🛒 Cart (<span id="cart-count">0</span>)
+    </button>
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+</header>
+
+<section class="hero" id="home">
+    <div class="hero-content">
+        <p class="tagline">MADE WITH LOVE & FRESH INGREDIENTS</p>
+        <h1>Life is Short,<br>Eat More <span>Cake!</span></h1>
+        <p>Delicious cakes, beautiful memories. Make every celebration sweeter with Pooja Cakes.</p>
+        <a href="#cakes" class="main-btn">Explore Cakes →</a>
+    </div>
+    <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=900" alt="Delicious chocolate cake">
+    </div>
+</section>
+
+<section class="features">
+    <div>🍰 <h3>Freshly Baked</h3><p>Made fresh every day</p></div>
+    <div>❤️ <h3>Made With Love</h3><p>Quality ingredients</p></div>
+    <div>🚚 <h3>Fast Delivery</h3><p>Delivered with care</p></div>
+    <div>🎉 <h3>Custom Cakes</h3><p>For every celebration</p></div>
+</section>
+
+<section class="about" id="about">
+    <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=800" alt="Fresh bakery treats">
+    </div>
+    <div class="about-content">
+        <p class="tagline">OUR SWEET STORY</p>
+        <h2>Welcome to <span>Pooja Cakes</span></h2>
+        <p>At Pooja Cakes, we believe every special moment deserves a delicious cake. We create beautiful and tasty cakes using fresh ingredients and lots of love.</p>
+        <p>From birthday celebrations to weddings and anniversaries, we make every occasion memorable.</p>
+        <a href="#contact" class="main-btn">Know More</a>
+    </div>
+</section>
+
+<section class="cakes" id="cakes">
+    <div class="section-heading">
+        <p class="tagline">OUR SPECIAL COLLECTION</p>
+        <h2>Our Delicious Cakes</h2>
+        <p>Choose your favourite sweetness!</p>
+    </div>
+
+    <div class="cake-grid">
+
+        <div class="cake-card">
+            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600" alt="Chocolate cake">
+            <div class="cake-info">
+                <h3>Chocolate Cake</h3>
+                <p>Rich chocolate and creamy goodness.</p>
+                <div class="price">₹599</div>
+                <button onclick="addToCart('Chocolate Cake',599)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="cake-card">
+            <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=600" alt="Strawberry cake">
+            <div class="cake-info">
+                <h3>Strawberry Cake</h3>
+                <p>Fresh strawberry cream delight.</p>
+                <div class="price">₹699</div>
+                <button onclick="addToCart('Strawberry Cake',699)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="cake-card">
+            <img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=600" alt="Birthday cake">
+            <div class="cake-info">
+                <h3>Birthday Cake</h3>
+                <p>Perfect cake for happy birthdays.</p>
+                <div class="price">₹799</div>
+                <button onclick="addToCart('Birthday Cake',799)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="cake-card">
+            <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=600" alt="Vanilla cake">
+            <div class="cake-info">
+                <h3>Vanilla Cake</h3>
+                <p>Soft, smooth and full of flavour.</p>
+                <div class="price">₹499</div>
+                <button onclick="addToCart('Vanilla Cake',499)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="cake-card">
+            <img src="https://images.unsplash.com/photo-1542826438-bd32f43d626f?w=600" alt="Cupcakes">
+            <div class="cake-info">
+                <h3>Special Cupcakes</h3>
+                <p>Little bites of happiness.</p>
+                <div class="price">₹299</div>
+                <button onclick="addToCart('Special Cupcakes',299)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="cake-card">
+            <img src="https://images.unsplash.com/photo-1535141192574-5d4897c12636?w=600" alt="Red velvet cake">
+            <div class="cake-info">
+                <h3>Red Velvet Cake</h3>
+                <p>Classic red velvet cream cake.</p>
+                <div class="price">₹899</div>
+                <button onclick="addToCart('Red Velvet Cake',899)">Add to Cart</button>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="offer">
+    <p>✨ SPECIAL OFFER ✨</p>
+    <h2>Make Your Celebrations Sweeter!</h2>
+    <p>Order your favourite cake for your special occasion.</p>
+    <a href="#contact" class="main-btn">Order Your Cake</a>
+</section>
+
+<section class="reviews" id="reviews">
+    <div class="section-heading">
+        <p class="tagline">HAPPY CUSTOMERS</p>
+        <h2>What People Say</h2>
+    </div>
+    <div class="review-grid">
+        <div class="review-card">
+            <div>⭐⭐⭐⭐⭐</div>
+            <p>"The chocolate cake was absolutely delicious. Loved it!"</p>
+            <h3>— Priya</h3>
+        </div>
+        <div class="review-card">
+            <div>⭐⭐⭐⭐⭐</div>
+            <p>"Beautiful cake design and amazing taste. Highly recommended."</p>
+            <h3>— Anjali</h3>
+        </div>
+        <div class="review-card">
+            <div>⭐⭐⭐⭐⭐</div>
+            <p>"Fresh, soft and tasty cakes. Perfect for celebrations."</p>
+            <h3>— Rahul</h3>
+        </div>
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <div class="section-heading">
+        <p class="tagline">GET IN TOUCH</p>
+        <h2>Order Your Favourite Cake</h2>
+        <p>Tell us what sweetness you are looking for!</p>
+    </div>
+
+    <form id="order-form">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <input type="tel" id="phone" placeholder="Phone Number" required>
+        <select id="cake-choice" required>
+            <option value="">Select Cake Type</option>
+            <option>Chocolate Cake</option>
+            <option>Strawberry Cake</option>
+            <option>Birthday Cake</option>
+            <option>Vanilla Cake</option>
+            <option>Red Velvet Cake</option>
+            <option>Custom Cake</option>
+        </select>
+        <textarea id="message" placeholder="Your Message or Cake Requirements"></textarea>
+        <button type="submit">Send Order Request ❤️</button>
+    </form>
+</section>
+
+<footer>
+    <h2>🎂 Pooja Cakes</h2>
+    <p>Sweetness in Every Bite | Happiness in Every Slice</p>
+    <div class="socials">
+        <a href="https://instagram.com/" target="_blank">Instagram</a>
+        <a href="https://facebook.com/" target="_blank">Facebook</a>
+    </div>
+    <p class="copyright">© 2026 Pooja Cake Shop. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
